@@ -7,7 +7,7 @@ const app=express();
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://pokefind-6w7o.onrender.com:5173',
   credentials: false
 }));
 app.use(express.static(path.join(__dirname,'dist')));
@@ -18,4 +18,4 @@ app.post("/save_score",controller.saveScore);
 app.get("*splat",(req,res)=>{
   res.sendFile(path.join(__dirname,'dist','index.html'));
 })
-app.listen(8080,()=>console.log("listening on http://localhost:8080"));
+app.listen(8080,()=>console.log());
