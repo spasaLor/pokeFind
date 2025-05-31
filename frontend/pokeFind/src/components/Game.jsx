@@ -14,7 +14,7 @@ export default function Game(){
 
     useEffect(()=>{
         const fetchData = async()=>{
-            const data = await fetch("http://localhost:8080/get_pokemons");
+            const data = await fetch("https://pokefind-6w7o.onrender.com/get_pokemons");
             const json = await data.json();
             setPokemons(json);
         };
@@ -33,7 +33,7 @@ export default function Game(){
 
     const save = async()=>{
         const time=(end-start)/1000;
-        const res = await fetch("http://localhost:8080/save_score",
+        const res = await fetch("https://pokefind-6w7o.onrender.com/save_score",
         {
             method:'POST',
             headers:{"Content-Type":"application/json"},
@@ -50,7 +50,7 @@ export default function Game(){
     const leaderboardClick = async()=>{
         setShowLeaderboard(true);
         try {
-            const data = await fetch("http://localhost:8080/leaderboard");
+            const data = await fetch("https://pokefind-6w7o.onrender.com/leaderboard");
             const json=await data.json();
             setLeaderboard(json.leaderboard);
         } catch (error) {

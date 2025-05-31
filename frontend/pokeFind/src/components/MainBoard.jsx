@@ -9,7 +9,7 @@ function PokeModal({x,y,pokemonList,normalizedCoords,onFound}){
     const handleClick=async(e)=>{
         e.stopPropagation();
         const name=e.currentTarget.getAttribute("data-pokemon");
-        const res=await fetch("http://localhost:8080/check_pokemon",
+        const res=await fetch("https://pokefind-6w7o.onrender.com/check_pokemon",
             {
                 method:"POST",
                 headers:{"Content-Type":"application/json"},
