@@ -1,0 +1,144 @@
+#root {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
+.container img{
+  width: 100%;
+}
+.modal{
+  position: absolute;
+  height: fit-content;
+  width: 200px;
+  background-color: rgb(53, 122, 226);
+}
+.modal ul{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.modal ul img{
+  width: 70px;
+  height: 70px;
+}
+.modal ul li{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: center;
+  text-transform: capitalize;
+  padding: 0 1em;
+  border-bottom: 1px solid white;
+}
+.modal ul li:hover{
+  background-color: #1f1f1f;
+  cursor: pointer;
+}
+.modal ul li b{
+  flex: 1;
+}
+.sidebar{
+  grid-column: 2;
+  width: 100%;
+  background: linear-gradient(to left, rgba(0,0,0,0)0%, rgb(32, 144, 235) 100%);
+}
+.sidebar h2{
+  text-align: center;
+}
+
+.sidebar img{
+  width: 150px;
+  height: 150px;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+ul li{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.found{
+  background-color: green;
+}
+.scoreModal{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scoreModal .content{
+  width: 600px;
+  height: 400px;
+  background-color: rgb(60, 118, 219);
+  color: rgb(237, 226, 22);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:1em;
+  padding: 0 2em;
+  box-sizing: border-box;
+  font-weight: bold;
+  border-radius: 8px;
+}
+.content .time, .content .user{
+  justify-content: center;
+  display: flex;
+  gap:5px;
+  align-items: center;
+}
+.content .user{
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.user input{
+  font-size: 1rem;
+  padding: 0.25em 0.5em;
+}
+.time p, .user label{
+  flex:1 ;
+  margin: 0;
+}
+.content button{
+  color:rgb(237, 226, 22);
+}
+.leaderboard{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap:1em
+}
+
+.leaderboard ul li{
+  list-style-type: decimal;
+  background-color: #131fa6;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border: 1px solid #060946;
+  
+}
+.leaderboard .top{
+  display: flex;
+  justify-content: flex-start;
+  gap:7em;
+  align-items: center;
+}
+
+.sidebar b{
+  text-transform: capitalize;
+}
