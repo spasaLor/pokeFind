@@ -38,7 +38,7 @@ PokeFind is a Pokémon-themed hidden object game inspired by the classic "Where'
 
 ## 🖥️ Live Demo
 
-Try it out here: [PokeFind] (https://pokefind-6w7o.onrender.com)
+Try it out here: [PokeFind](https://pokefind-6w7o.onrender.com)
 
 ---
 
